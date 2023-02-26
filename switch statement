@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+int main(){
+char operator;
+double a,b;
+printf("\nchoose the operator(+,-,/,*)\n");
+scanf("%c",&operator);
+printf("choose the two number: \n");
+scanf("%lf %lf",&a,&b);
+
+switch(operator){
+case '+':
+printf("%.lf + %.lf = %.lf",a,b,a+b);
+break;
+case '-':
+printf("%.lf - %.lf = %.lf",a,b,a-b);
+break;
+case '/':
+printf("%.lf / %.lf = %.lf",a,b,a/b);
+break;
+case '*':
+printf("%.lf * %.lf = %.lf",a,b,a*b);
+break;
+default:
+    printf("Error,the operator is incorrect");
+
+}
+return 0;
+}
