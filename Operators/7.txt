@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+    float lengt, breath, area;
+    printf("Enter Length of Rectangle: ");
+    scanf("%f", &length);
+    printf("Enter breadth of Rectangle: ");
+    scanf("%f", &breath);
+    area = length*breeath;
+    printf("\nArea = %f", area);
+    return 0;
+}
