@@ -1,0 +1,45 @@
+#include<stdio.h>
+
+int main()
+{
+ int i[2][2],j[2][2],k[2][2],a,b,c;
+ 
+ printf("enter the value for first matrix A: \n");
+ for(a=0;a<2;a++)
+ {
+     for(b=0;b<2;b++)
+     {
+         scanf("%d",&i[a][b]);
+     }
+ }
+  
+ printf("enter the value for first matrix B: \n");
+ for(a=0;a<2;a++)
+ {
+     for(b=0;b<2;b++)
+     {
+         scanf("%d",&j[a][b]);
+     }
+ }
+ for(a=0;a<2;a++)
+ {
+     for(b=0;b<2;b++) {
+     k[a][b] = 0;
+     for(c=0;c<2;c++) {
+     k[a][b] += i[a][c] * j[c][b];
+     }
+   }
+ }
+ 
+ printf("the multiplication of matrix: \n");
+ for(a = 0 ;a < 2 ;a++)
+ {
+     for(b = 0;b < 2;b++)
+     {
+         printf("%d\t",k[a][b]);
+     }
+     printf("\n");
+ }
+return 0;
+}
+
